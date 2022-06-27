@@ -1,0 +1,16 @@
+EMP_Record := RECORD
+    STRING10 Name;
+    INTEGER Salary;
+    STRING10 Designation; 
+END;
+
+ds := DATASET([{'Rana',10000,'Supervisor'},{'John',12000,'Executive'},{'Joseph',10000,'Supervisor'},
+{'Friday',20000,'Manager'},{'John',20000,'Manager'},{'Friday',12000,'Executive'}],EMP_Record);
+
+Sorted_EMP := SORT(ds,Salary);
+DsEmp := DEDUP(Sorted_EMP,Salary);
+DEmp := DEDUP(ds,Salary);
+
+OUTPUT(Sorted_Emp,NAMED('EmpSorted'));
+OUTPUT(DsEmp,NAMED('EmpSortedDedup'));
+OUTPUT(DEmp,NAMED('EmpDedup'));
