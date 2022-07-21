@@ -12,11 +12,11 @@
       "serverAddress": "localhost",
       "port": 8010,
       "path": "",
-      "targetCluster": "hthor",
+      "targetCluster": "thor",
       "rejectUnauthorized": true,
       "resultLimit": 100,
       "timeoutSecs": 60,
-      "user": "vscode_user",
+      "user": "SaahilM",
       "password": ""
     },
     {
